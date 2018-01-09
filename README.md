@@ -1,5 +1,18 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
+---
+
+## Introduction
+The goal of this project is to build a PID controller to drive a car through the track of Udacity simulator with minimum oscillation and without falling off the track.
+
+## Rubric points
+- *Describe the effect each of the P, I, D components had in your implementation.*
+
+The P or proportional portion of the controller tries to steer the car towards the center line. It causes the car to steer proportional (and opposite) to the car's distance from the center lane.
+
+The integral term (I) takes into account the integral of cte over timeand it usually correct for small drifts and issues the vehicle may have. For this project, I didn't find the need for this as it seems like there is not much drift in the simulator.
+
+The D or derivative component tries to correct for the effect of proportional component to overshoot the center line. 
 
 ---
 
