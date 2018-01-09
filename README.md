@@ -14,7 +14,9 @@ The integral term (I) takes into account the integral of cte over timeand it usu
 
 The D or derivative component tries to correct for the effect of proportional component to overshoot the center line. 
 
----
+- *Hyper-parameter tuning*
+
+Hyper-parameters were tuned manually. I started by zeroing out the D and I and increasing the P term. Once the P controller was able to drive "reasonably", I then started incrementing and tuning D to control for overshooting. There was no need to have I term as the P and D parameters were enough to drive the car around the track.
 
 ## Dependencies
 
